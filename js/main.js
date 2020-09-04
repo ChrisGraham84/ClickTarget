@@ -9,7 +9,7 @@ if(window.innerwidth < 700){
      min_y = 0;
      max_y = 375;
 }
-
+//start with a 0 score
 let score = 0;
 
 
