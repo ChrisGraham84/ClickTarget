@@ -51,7 +51,7 @@ function startGame(){
 
     //var countDownDate = new Date("Jan 5, 2024 15:27:25").getTime();
     var t = new Date()
-    var countDownDate = t.setSeconds(t.getSeconds() + 35);
+    var countDownDate = t.setSeconds(t.getSeconds() + 22);
     var x = setInterval(()=>{
     var now = new Date().getTime();
     var remainingTime = countDownDate - now;
@@ -68,7 +68,7 @@ function startGame(){
             clearInterval(x);
             ticker_ui.innerHTML = "TIMEOUT";
             game.removeChild(play_area);
-            if(score > 4)
+            if(score >= 4)
             {
                 score_ui.innerHTML = `SCORE ${score} -- YOU WIN`;
             }
