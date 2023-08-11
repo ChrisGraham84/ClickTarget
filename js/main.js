@@ -9,8 +9,7 @@ if(window.innerwidth < 700){
      min_y = 0;
      max_y = 375;
 }
-//start with a 0 score
-let score = 0;
+
 
 
 //get game div
@@ -25,6 +24,9 @@ start_area.addEventListener("click", startGame)
 
 function startGame(){
     this.style.display = "none";
+
+        //start with a 0 score
+        let score = 0;
 
         //set up play area
         const play_area = document.createElement('section');
