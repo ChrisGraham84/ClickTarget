@@ -73,10 +73,12 @@ function startGame(){
             if(score >= 4)
             {
                 score_ui.innerHTML = `SCORE ${score} -- YOU WIN`;
+                alert("GAMEOVER --YOU WIN!");
             }
             else
             {
                 score_ui.innerHTML = `SCORE ${score} -- YOU LOSE`;
+                alert("GAMEOVER -- YOU LOSE!");
             }
             this.style.display = "block";
         }
