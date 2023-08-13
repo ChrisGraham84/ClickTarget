@@ -83,7 +83,7 @@ function startGame(){
             else
             {
                 //score_ui.innerHTML = `SCORE ${score} -- YOU LOSE`;
-                alert(`CORE ${score} -- YOU LOSE!`);
+                alert(`SCORE ${score} -- YOU LOSE!`);
             }
 
             this.style.display = "block";
