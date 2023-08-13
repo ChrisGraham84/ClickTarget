@@ -68,18 +68,24 @@ function startGame(){
 
         if(remainingTime < 0){
             clearInterval(x);
-            ticker_ui.innerHTML = "TIMEOUT";
+            game.removeChild(play_inventory);
+            game.removeChild(time_ui);
+            game.removeChild(play_ui);
             game.removeChild(play_area);
+            ticker_ui.innerHTML = "TIMEOUT";
+            
             if(score >= 4)
             {
-                score_ui.innerHTML = `SCORE ${score} -- YOU WIN`;
-                alert("GAMEOVER --YOU WIN!");
+                //score_ui.innerHTML = `SCORE ${score} -- YOU WIN`;
+                alert(`SCORE ${score} -- YOU WIN!`);
+                
             }
             else
             {
-                score_ui.innerHTML = `SCORE ${score} -- YOU LOSE`;
-                alert("GAMEOVER -- YOU LOSE!");
+                //score_ui.innerHTML = `SCORE ${score} -- YOU LOSE`;
+                alert(`CORE ${score} -- YOU LOSE!`);
             }
+
             this.style.display = "block";
         }
 
